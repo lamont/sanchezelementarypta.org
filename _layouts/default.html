@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+
+  {% include head.html %}
+
+  <body class="layout-reverse">
+
+    {% include sidebar.html %}
+
+    <div class="content container">
+
+      <h1 class="site-title"><a href="/">{{ site.title }} {{ site.desc }}</a></h1>
+
+      {% for lang in site.data.languages %}
+        {% assign langCode = lang[0] %}
+        {% if langCode == 'en' %}{% continue %}{% endif %}
+      {% endfor %}
+
+      <h5 class="languages">
+        <table class="languages">
+          <tr>
+            {% for lang in site.data.languages %}
+            {% assign language = lang[1] %}
+            <td><h5><a href="/{{lang[0]}}">{{language.icon}} {{ language.label }} ({{ lang[0] }})</a></h5></td>
+            {% endfor %}
+          </tr>
+        </table>
+
+      {{ content }}
+      {% include footer.html %}
+    </div>
+  </body>
+</html>

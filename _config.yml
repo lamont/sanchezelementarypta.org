@@ -1,0 +1,12 @@
+# Dependencies
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Sanchez Elementary
+tagline:          'In two languages'
+description:      'Parent-Teacher Association'
+desc:             'PTA'
+baseurl:          /
