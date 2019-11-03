@@ -263,7 +263,7 @@ tbody tr:nth-child(odd) th {
 .lead {
   font-size: 1rem;
   font-weight: 300;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 
@@ -435,6 +435,7 @@ a.pagination-item:hover {
  h1.site-title {
    font-family: "Abril Fatface", serif;
    font-size: 2.5rem;
+   margin-top: 10px;
  }
 
  h1.site-title a {
