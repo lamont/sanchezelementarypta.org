@@ -288,3 +288,14 @@ ul.photo-gallery li {
   list-style-type: none;
   vertical-align: top;
 }
+
+ul.photo-gallery-frontpage {
+  columns: 6;
+  margin: 0 auto;
+  padding-inline-start: 0px;
+}
+
+ul.photo-gallery-frontpage li {
+  list-style-type: none;
+  vertical-align: top;
+}
