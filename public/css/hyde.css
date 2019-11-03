@@ -276,3 +276,15 @@ footer.lang-options ul > li {
   display: inline-block;
   margin-right: 1em;
 }
+
+ul.photo-gallery {
+  columns: 2;
+  margin: 0 auto;
+  padding-inline-start: 0px;
+}
+
+ul.photo-gallery li {
+  display: inline-block;
+  list-style-type: none;
+  vertical-align: top;
+}
