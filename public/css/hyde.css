@@ -58,7 +58,7 @@ html {
   padding: 1rem 1rem;
   color: rgba(255,255,255,.5);
   background-color: #fff;
-  border-left: 1px solid #000;
+  border-right: 4px solid #eee;
 }
 @media (min-width: 48em) {
   .sidebar {
@@ -78,6 +78,7 @@ html {
 
 .sidebar img {
   width: 50%;
+  float: right;
 }
 
 /* About section */

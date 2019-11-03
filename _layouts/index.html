@@ -2,9 +2,26 @@
 layout: default
 ---
 
+{% for lang in site.data.languages %}
+  {% assign langCode = lang[0] %}
+  {% if langCode == 'en' %}{% continue %}{% endif %}
+{% endfor %}
+
+<div class="languages">
+  <table class="languages">
+    <tr>
+      {% for lang in site.data.languages %}
+      {% assign language = lang[1] %}
+      <td><h5><a href="/{{lang[0]}}">{{language.icon}} {{ language.label }} ({{ lang[0] }})</a></h5></td>
+      {% endfor %}
+    </tr>
+  </table>
+</div>
+
 <div class="posts">
   {{ content }}
   <br />
+  
   {% assign posts = site.posts | where:"lang", page.lang %}
   {% for post in posts %}
   <div class="post">

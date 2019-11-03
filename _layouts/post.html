@@ -2,6 +2,22 @@
 layout: default
 ---
 
+{% assign posts=site.posts | where:"lang-ref", page.lang-ref | sort: 'lang' %}
+{% if posts.size == 0 %}
+    {% assign posts=site.pages | where:"lang-ref", page.lang-ref | sort: 'lang' %}
+{% endif %}
+{% if posts.size > 1 %}
+<div class="languages">
+  <table class="languages">
+    <tr>
+      {% for post in posts %}
+      <td><h5><a title="{{ site.data.translations['viewIn'][page.lang] }} {{ site.data.languages[post.lang].label }}" class="{{post.lang}}" href="{{ site.base-url }}{{ post.url }}">{{ site.data.languages[post.lang].icon }} {{ site.data.languages[post.lang].label }}</a></h5></td>
+      {% endfor %}
+    </tr>
+  </table>
+</div>
+{% endif %}
+
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.date | date_to_string }}</span>
@@ -11,7 +27,7 @@ layout: default
 {% if related.size > 0 %}
 <div class="related">
   <h2>{{ site.data.translations['relatedPosts'][page.lang] }}</h2>
-  
+
   <ul class="related-posts">
     {% for post in related limit:3 %}
       <li>

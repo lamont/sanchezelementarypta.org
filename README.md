@@ -1,3 +1,7 @@
+# Laurel's notes
+
+This site is made from the `jekyll-multilingual` theme at https://github.com/dwalkr/jekyll-multilingual, which is based on Hyde.  See the blog post about it at https://forestry.io/blog/creating-a-multilingual-blog-with-jekyll/.
+
 # Hyde
 
 Hyde is a brazen two-column [Jekyll](http://jekyllrb.com) theme that pairs a prominent sidebar with uncomplicated content. It's based on [Poole](http://getpoole.com), the Jekyll butler.
