@@ -1,10 +1,9 @@
 <div class="sidebar">
   <a href="/"><img src="/public/img/SanchezCoyote.png"></a>
-  <div class="container sidebar-sticky">
 
+  <div class="container sidebar-sticky">
     <div class="sidebar-about">
       <nav class="sidebar-nav">
-
         {% comment %}
           The code below dynamically generates a sidebar nav of pages with
           `layout: page` in the front-matter. See readme for usage.
@@ -19,15 +18,23 @@
           {% endif %}
         {% endfor %}
       </nav>
+
       <h1>
         <a href="/">
           {{ site.title }}
         </a>
       </h1>
+
       <p class="lead">{{ site.description }}</p>
 
-    </div>
+      <footer>
+        <a href="https://maps.app.goo.gl/DYSHtNZ6dUNLnCAB7" target="_blank">325 Sanchez Street</a>
+        <a href="tel:14152416380">+1 (415) 241-6380</a>
+        <a href="mailto:info@sanchezelementarypta.org">info@sanchezelementarypta.org</a>
+        <span><abbr title="{{ site.data.translations['EIN'][page.lang] }}">EIN</abbr>: 90-1255925</span>
+      </footer>
 
-    <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+      <p class="legal">&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+    </div>
   </div>
 </div>
