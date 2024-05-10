@@ -91,6 +91,10 @@ html {
   text-align: left;
 }
 
+.sidebar-about .lead {
+  text-align: left;
+}
+
 .sidebar-about p {
   color: #9a9a9a;
 }
@@ -114,6 +118,7 @@ html {
 .sidebar-about .legal {
   color: #9a9a9a;
   font-size: 0.7rem;
+  text-align: left;
 }
 
 /* Sidebar nav */
