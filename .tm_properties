@@ -1,0 +1,7 @@
+excludeInFolderSearch = "{$excludeInFolderSearch,_site}"
+
+excludeInFileChooser = "{$excludeInFileChooser,_site}"
+
+include = "{*,$include,.tm_properties}"
+include = "{*,$include,.editorconfig}"
+include = "{*,$include,.gitignore}"
