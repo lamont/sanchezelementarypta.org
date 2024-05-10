@@ -56,7 +56,7 @@ html {
 .sidebar {
   text-align: center;
   padding: 1rem 1rem;
-  color: rgba(255,255,255,.5);
+  color: rgba(0,0,0, 0.5);
   background-color: #fff;
   border-right: 4px solid #eee;
 }
@@ -87,11 +87,29 @@ html {
   margin-top: 30px;
   font-family: "Abril Fatface", serif;
   font-size: 2.25rem;
+  line-height: 1.15;
   text-align: left;
 }
 
 .sidebar-about p {
   color: #9a9a9a;
+}
+
+.sidebar-about footer {
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  font-size: 0.8rem;
+  margin: 1em 0;
+}
+
+.sidebar-about footer a {
+  width: fit-content;
+}
+
+.sidebar-about .legal {
+  color: #9a9a9a;
+  font-size: 0.7rem;
 }
 
 /* Sidebar nav */
