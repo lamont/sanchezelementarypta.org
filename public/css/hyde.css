@@ -200,6 +200,26 @@ a.sidebar-nav-item:focus {
 }
 
 
+/*
+ * Misc
+ *
+ */
+
+.languages {
+  display: flex;
+}
+
+.languages a {
+  flex: 1;
+  text-align: center;
+  border: 1px solid #e5e5e5;
+  background: #f9f9f9;
+  padding: 15px;
+  color: #000;
+  font-weight: bold;
+  margin: 30px 15px;
+}
+
 
 /*
  * Themes

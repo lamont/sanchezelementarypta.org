@@ -8,13 +8,9 @@ layout: default
 {% endif %}
 {% if posts.size > 1 %}
 <div class="languages">
-  <table class="languages">
-    <tr>
-      {% for post in posts %}
-      <td><h5><a title="{{ site.data.translations['viewIn'][page.lang] }} {{ site.data.languages[post.lang].label }}" class="{{post.lang}}" href="{{ site.base-url }}{{ post.url }}">{{ site.data.languages[post.lang].icon }} {{ site.data.languages[post.lang].label }}</a></h5></td>
-      {% endfor %}
-    </tr>
-  </table>
+  {% for post in posts %}
+  <a title="{{ site.data.translations['viewIn'][page.lang] }} {{ site.data.languages[post.lang].label }}" class="{{post.lang}}" href="{{ site.base-url }}{{ post.url }}">{{ site.data.languages[post.lang].icon }} {{ site.data.languages[post.lang].label }} ({{ post.lang }})</a>
+  {% endfor %}
 </div>
 {% endif %}
 
