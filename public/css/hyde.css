@@ -107,6 +107,10 @@ html {
   width: fit-content;
 }
 
+.sidebar-about footer span {
+  text-align: left;
+}
+
 .sidebar-about .legal {
   color: #9a9a9a;
   font-size: 0.7rem;
