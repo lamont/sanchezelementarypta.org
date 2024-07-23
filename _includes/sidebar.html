@@ -9,7 +9,9 @@
           `layout: page` in the front-matter. See readme for usage.
         {% endcomment %}
 
-        {% assign pages_list = site.pages | where:"lang", page.lang %}
+        {% assign lang = page.lang | default: site.data.vars.default_lang %}
+
+        {% assign pages_list = site.pages | where:"lang", lang %}
         {% for node in pages_list %}
           {% if node.title != null %}
             {% if node.layout == "page" %}
@@ -31,7 +33,7 @@
         <a href="https://maps.app.goo.gl/DYSHtNZ6dUNLnCAB7" target="_blank">325 Sanchez Street</a>
         <a href="tel:14152416380">(415) 241-6380</a>
         <a href="mailto:info@sanchezelementarypta.org">info@sanchezelementarypta.org</a>
-        <span><abbr title="{{ site.data.translations['EIN'][page.lang] }}">EIN</abbr>: 90-1255925</span>
+        <span><abbr title="{{ site.data.translations['EIN'][lang] }}">EIN</abbr>: 90-1255925</span>
       </footer>
 
       <p class="legal">&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
